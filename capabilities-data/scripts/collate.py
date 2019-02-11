@@ -18,7 +18,7 @@ def load_encodings():
     """
     Load in all the encodings from the encoding definition file
     """
-    encoding_fn = os.path.dirname(__file__) + "/../data/encoding.yml"
+    encoding_fn = os.path.dirname(os.path.abspath(__file__)) + "/../data/encoding.yml"
     encodings_raw = yaml.safe_load(open(encoding_fn).read())
     return encodings_raw
 
@@ -27,7 +27,7 @@ def load_profiles():
     Load in all the profiles from the profile folder (file-per-profile)
     """
     profiles_raw = {}
-    profiles_dir = os.path.dirname(__file__) + "/../data/profile/"
+    profiles_dir = os.path.dirname(os.path.abspath(__file__)) + "/../data/profile/"
     for profile_fn in os.listdir(profiles_dir):
         if not profile_fn[-3:] == 'yml':
             continue
@@ -135,13 +135,13 @@ def run_collation():
 
     # Dump output in format that is safe for human consumption in reasonable quantities
     json_capabilities = json.dumps(capabilities, sort_keys=True, indent=4, separators=(',', ': '))
-    with open(os.path.dirname(__file__) + "/../dist/capabilities.json", "wb+") as json_f:
+    with open(os.path.dirname(os.path.abspath(__file__)) + "/../dist/capabilities.json", "wb+") as json_f:
         json_f.write(json_capabilities.encode('utf-8'))
 
     # Convert it to YAML, preserving the same order
     ordered_dict = json.loads(json_capabilities, object_pairs_hook=collections.OrderedDict)
     yml_capabilities = pyaml.dumps(ordered_dict, string_val_style='"', explicit_start=True)
-    with open(os.path.dirname(__file__) + "/../dist/capabilities.yml", "wb+") as yml_f:
+    with open(os.path.dirname(os.path.abspath(__file__)) + "/../dist/capabilities.yml", "wb+") as yml_f:
         yml_f.write(yml_capabilities)
 
 if __name__ == "__main__":
