@@ -2,22 +2,11 @@
 python-escpos - Python library to manipulate ESC/POS Printers
 #############################################################
 
-.. image:: https://travis-ci.org/python-escpos/python-escpos.svg?branch=master
-    :target: https://travis-ci.org/python-escpos/python-escpos
-    :alt: Continous Integration
+To install this version with pip, put this line in requirements.txt
 
-.. image:: https://landscape.io/github/python-escpos/python-escpos/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/python-escpos/python-escpos/master
-    :alt: Code Health
-
-.. image:: https://codecov.io/github/python-escpos/python-escpos/coverage.svg?branch=master
-    :target: https://codecov.io/github/python-escpos/python-escpos?branch=master
-    :alt: Code Coverage
-
-.. image:: https://readthedocs.org/projects/python-escpos/badge/?version=stable
-    :target: http://python-escpos.readthedocs.io/en/latest/?badge=stable
-    :alt: Documentation Status
-
+```
+git+git://github.com/BbotLLC/python-escpos.git@master
+```
 
 Description
 -----------
