@@ -8,6 +8,7 @@ TM-U220:
     bitImageRaster: false
     bitImageColumn: true
     highDensity: false
+    paperFullCut: true
   colors:
     0: black
     1: alternate
