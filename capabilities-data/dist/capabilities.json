@@ -1788,7 +1788,7 @@
                 "bitImageRaster": false,
                 "graphics": false,
                 "highDensity": false,
-                "paperFullCut": false,
+                "paperFullCut": true,
                 "paperPartCut": false,
                 "pdf417Code": false,
                 "pulseBel": false,
