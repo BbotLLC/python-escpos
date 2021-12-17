@@ -78,20 +78,14 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
         del profile['inherits']
 
     # Sanity check for required keys exist
-    required_keys = ['vendor', 'features', 'media', 'notes', 'fonts', 'colors', \
-                     'codePages', 'name']
+    required_keys = ['vendor', 'features', 'media', 'notes', 'fonts', 'colors', 'codePages', 'name']
     for i in required_keys:
-        assert i in profile.keys(), \
-            "{}: Profile key '{}' must be defined or inherited" \
-            .format(profile_name, i)
+        assert i in profile.keys(), "{}: Profile key '{}' must be defined or inherited".format(profile_name, i)
 
     # Sanity check for required features exist
-    required_features = ['starCommands', 'highDensity', 'barcodeB', \
-                         'bitImageColumn', 'graphics', 'qrCode', 'bitImageRaster']
+    required_features = ['starCommands', 'highDensity', 'barcodeB', 'bitImageColumn', 'graphics', 'qrCode', 'bitImageRaster']
     for i in required_features:
-        assert i in profile['features'].keys(), \
-            "{}: Profile feature '{}' must be defined or inherited" \
-            .format(profile_name, i)
+        assert i in profile['features'].keys(), "{}: Profile feature '{}' must be defined or inherited".format(profile_name, i)
 
     # Reference check over encodings
     for i in profile['codePages'].values():
