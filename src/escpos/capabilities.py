@@ -22,9 +22,7 @@ pickle_path = path.join(
 )
 # get a temporary file from pkg_resources if no file is specified in env
 capabilities_path = environ.get(
-    "ESCPOS_CAPABILITIES_FILE",
-    pkg_resources.resource_filename(__name__, "capabilities.json"),
-)
+    "ESCPOS_CAPABILITIES_FILE", path.join(path.dirname(__file__), 'capabilities.json')),
 
 # Load external printer database
 t0 = time.time()
