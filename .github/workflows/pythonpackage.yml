@@ -40,4 +40,4 @@ jobs:
       run: |
         tox
       env:
-        ESCPOS_CAPABILITIES_FILE: /home/runner/work/python-escpos/python-escpos/capabilities/src/escpos/capabilities.json
+        ESCPOS_CAPABILITIES_FILE: /home/runner/work/python-escpos/python-escpos/src/escpos/capabilities.json
