@@ -1,6 +1,92 @@
 *********
 Changelog
 *********
+2020-05-12 - Version 3.0a8 - "Only Slightly Bent"
+-------------------------------------------------
+This release is the ninth alpha release of the new version 3.0.
+Please be aware that the API is subject to change until v3.0 is
+released.
+
+This release drops support for Python 2, requiring at least
+version 3.5 of Python.
+
+changes
+^^^^^^^
+- Drop support for Python 2 and mark in setuptools as only supporting 3.5 and upwards
+- remove landscape.io badge
+- replace viivakoodi with python-barcode which is maintained
+- add configuration for Visual Studio Code
+- use pkg_resources for the retrieval of the capabilities.json
+
+contributors
+^^^^^^^^^^^^
+- Romain Porte
+- Patrick Kanzler
+
+2020-05-09 - Version 3.0a7 - "No Fixed Abode"
+---------------------------------------------
+This release is the eight alpha release of the new version 3.0.
+Please be aware that the API is subject to change until v3.0
+is released.
+
+This release also marks the point at which the project transitioned
+to having only a master-branch (and not an additional development branch).
+
+changes
+^^^^^^^
+- add Exception for NotImplementedError in detach_kernel_driver
+- update installation information
+- update and improve documentation
+- add error handling to image centering flag
+- update and fix tox and CI environment, preparing drop of support for Python 2
+
+contributors
+^^^^^^^^^^^^
+- Alexander Bougakov
+- Brian
+- Yaisel Hurtado
+- Maximilan Wagenbach
+- Patrick Kanzler
+
+2019-06-19 - Version 3.0a6 - "Mistake not..."
+---------------------------------------------
+This release is the seventh alpha release of the new version 3.0.
+Please be aware that the API is subject to change until v3.0 is
+released.
+
+changes
+^^^^^^^
+- fix inclusion of the capabilities-file
+- execute CI jobs also on Windows and macOS-targets
+- improve documentation
+
+contributors
+^^^^^^^^^^^^
+- Patrick Kanzler
+
+2019-06-16 - Version 3.0a5 - "Lightly Seared On The Reality Grill"
+------------------------------------------------------------------
+This release is the sixth alpha release of the new version 3.0. Please
+be aware that the API is subject to change until v3.0 is released.
+
+changes
+^^^^^^^
+- allow arbitrary USB arguments in USB-class
+- add Win32Raw-Printer on Windows-platforms
+- add and improve Windows support of USB-class
+- use pyyaml safe_load()
+- improve doc
+- implement _read method of Network printer class
+
+contributors
+^^^^^^^^^^^^
+- Patrick Kanzler
+- Gerard Marull-Paretas
+- Ramon Poca
+- akeonly
+- Omer Akram
+- Justin Vieira
+
 2018-05-15 - Version 3.0a4 - "Kakistocrat"
 ------------------------------------------
 This release is the fifth alpha release of the new version 3.0. Please
