@@ -5,7 +5,7 @@ python-escpos - Python library to manipulate ESC/POS Printers
 To install this version with pip, put this line in requirements.txt
 
 ```
-git+git://github.com/BbotLLC/python-escpos.git@master
+git+git://github.com/doordash/bb-python-escpos.git@master
 ```
 
 Description
